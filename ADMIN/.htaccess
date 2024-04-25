@@ -1,0 +1,13 @@
+
+SetEnv wsgi_max_requests 10
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+<Files *>
+  Options -Indexes
+  AuthType CAS
+  require user rerickso aschaef1  ccorrier idavis1 idiazper tasthana vmulpuri alputnam  geschutz zebell rerickso  dwhooley
+  satisfy any
+  order allow,deny
+</Files>

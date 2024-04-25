@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav a {
+    width: 40%;
+    display: inline-block;
+    font-size: x-large;
+}
+
+nav a:hover {
+    background-color: #ddffdd;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#admin table {
+    margin: 0;
+}
+
+table {
+    border: medium #000080 solid;
+    max-width: 100%;
+}
+
+td,
+th {
+    border: thin #000080 dashed;
+    text-align: left;
+    padding: .2em;
+}
+
+caption {
+    font-weight: bold;
+    font-size: large;
+}
+
+tr {
+    line-height: 1.5em;
+}
+
+.databases tr td {
+    padding: 0;
+}
+
+body#admin tr.current {
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: lightgoldenrodyellow;
+    border: medium solid darkblue;
+}
+
+.current a {
+    color: darkred;
+}
+
+
+
+/*    grid set up    */
+body {
+    display: grid;
+    grid-template-areas: "debug nav" "databases tables" "records tables";
+    grid-template-columns: auto auto;
+    grid-gap: 2em;
+    line-height: 1.5;
+    margin: auto;
+    width: 95%
+}
+
+nav {
+    grid-area: nav;
+}
+
+.databases {
+    grid-area: databases;
+}
+
+.tables {
+    grid-area: tables;
+}
+
+.records {
+    grid-area: records;
+}
+
+a.code {
+    color: brown;
+}
+
+a.show {
+    color: blue;
+}
+
+.error {
+    color: red;
+}
+
+.attendance{
+    font-size: small;
+    font-variant: all-petite-caps;
+    text-align: left;
+}
+
+.warning {
+    color: orange;
+}
+
+.success {
+    color: green;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    background-color: #CCCCFF;
+}
+
+#admin table {
+    background-color: #FFFFFF;
+    font-family: monospace;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#admin tr:nth-child(odd){
+    background: #ffffff;
+}
+#admin tr:nth-child(even){
+    background: #ddffdd;
+} 
+
+.right{
+    text-align: right;
+}
+
+#admin p {
+    display: table;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+html body .worried a, html body .worried td{
+    color: white;
+}
+
+html body .worried{
+    background-color: darkred;
+    color: white;
+}
+
+html body .on-line{
+    color: #7122a7;
+}
+
+.addSpace{
+    margin-top: 34em;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+
+@media only screen and (max-width: 750px) {
+    body {
+        grid-template-areas: "debug" "nav" "databases" "tables" "records";
+        grid-template-columns: auto;
+    }
+}
