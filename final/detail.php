@@ -128,7 +128,7 @@
                         </p>
                         <p>
                             <label for="numScore">Score</label>
-                            <input id="numScore" type="number" name="numScore" placeholder="1-100" min="0" max="100" required>
+                            <input id="numScore" type="number" name="numScore" placeholder="1-100" min="0" max="100" <?php if($score > 0) {print 'value="'. $score . '"';} ?>required>
                         </p>
                         <p>
                             <label for="txtEmail">Email</label><input type="email" name="txtEmail" id="txtEmail" placeholder="reader@catbooks.org" value="<?php print $email ?>" required>

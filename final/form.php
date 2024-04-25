@@ -10,7 +10,7 @@
     $title = '';
     $lastName = '';
     $firstName = '';
-    $year = 1952;
+    $year = 0;
     $genre = '';
     $summary = '';
 
@@ -93,7 +93,7 @@
                         </p>
                         <p>
                             <label for="numYear">Year Published</label>
-                            <input id="numYear" type="number" name="numYear" placeholder="1953" min="1" max="<?php print date("Y"); ?>" value="<?php print $year ?>" required>
+                            <input id="numYear" type="number" name="numYear" placeholder="1953" min="1" max="<?php print date("Y"); ?>" <?php if($year > 0) {print 'value="'. $year . '"';} ?> required>
                         </p>
                         <p>
                             <label for="lstGenre">Genre</label>
