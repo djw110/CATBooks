@@ -56,6 +56,19 @@
             if($statement->execute($data)){
                 $message .= '<h2>Thank you</h2>';
                 $message .= '<p>Data Successfully Saved</p>';
+
+                $to = $email;
+                $from = 'CATBooks Team <dwhooley@uvm.edu>';
+                $subject = 'Thank You For Submitting A Review!';
+
+                $headers = "MIME-Version: 1.0\r\n";
+                $headers .= "Content-type: text/html; charset=utf-8\r\n";
+                $headers .= "From: " . $from . "\r\n";
+
+                $mailmsg = '<p style="font: 15pt Verdana;">Your review has been added to the list. Thank you for your thoughts!</p>';
+                $mailmsg .= '<p>Happy reading<br>';
+                $mailmsg .= '<span style="color: yellow;">CAT</span><span style="color: green;">Books </span><span>Team</span>';
+                $mailsent = mail($to,$subject,$mailmsg,$headers);
             }
 
             print PHP_EOL . '<!-- Review Added -->' . PHP_EOL;
