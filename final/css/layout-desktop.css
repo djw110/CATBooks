@@ -1,0 +1,53 @@
+
+.mainsection {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.libsection{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.5%;
+    flex: 1 1 100%;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#formsection{
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainsection > * {
+    flex: 1 1 50%;
+}
+
+.allcols {
+    flex: 1 1 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    flex-grow: 1;
+}
