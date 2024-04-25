@@ -138,11 +138,10 @@
             <h3>Database</h3>
             <p><a href="final/sql.php">sql.php</a></p>
             <p><a href="final/database-connect.php">database-connect.php</a></p>
-            <p><a href="final/images/records.png">records.png</a></p>
 
         </section>
 
-        
+
         <section class="grader-notes">
             <h3>Notes to grader</h3>
             <p></p>
