@@ -56,12 +56,9 @@
             $data = array($title,$lastName,$firstName,$year,$genre,$summary,-1);
             $statement = $pdo->prepare($sql);
             if($statement->execute($data)){
-                $message .= '<h2>Thank you</h2>';
-                $message .= '<p>Data Successfully Saved</p>';
+                $message .= '<p>Thank you</p>';
+                $message .= '<p>Book Submitted</p>';
             }
-            
-            $message .= '<h2>Thank you</h2>';
-            $message .= '<p>Data Successfully Saved</p>';
         }
     }
 
@@ -73,6 +70,11 @@
         </h2>
         <div class = "mainsection">
             <section id="formsection">
+                <?php
+                    if($message != ''){
+                        print $message;
+                    }
+                ?>
                 <h2 id="FormHeader">Complete This Form</h2>
                 <form action="#" method="POST">
                     

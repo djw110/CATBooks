@@ -53,8 +53,7 @@
             $data = array(htmlspecialchars($_GET["id"]),$review,$score,$email);
             $statement = $pdo->prepare($sql);
             if($statement->execute($data)){
-                $message .= '<h2>Thank you</h2>';
-                $message .= '<p>Data Successfully Saved</p>';
+                $message .= '<p>Review Submitted</p>';
 
                 $to = $email;
                 $from = 'CATBooks Team <dwhooley@uvm.edu>';
@@ -90,10 +89,6 @@
             $sql = 'UPDATE tblBooks SET varRating = ? WHERE pmkBookID = ?';
             $statement = $pdo->prepare($sql);
             $statement->execute([$sum,htmlspecialchars($_GET["id"])]);
-
-
-            $message .= '<h2>Thank you</h2>';
-            $message .= '<p>Data Successfully Saved</p>';
         }
 
 
@@ -105,6 +100,7 @@
         <main>
         <div class="mainsection">
             <?php
+
                 $sql = 'SELECT fldTitle, fldLastName, fldFirstName, fldYear, fldGenre, fldSummary, varRating FROM tblBooks WHERE pmkBookID = ?';
                 $statement = $pdo->prepare($sql);
                 $statement->execute([htmlspecialchars($_GET["id"])]);
@@ -131,6 +127,12 @@
 
 
             <section>
+                <?php
+                    if($message != ''){
+                        print $message;
+                    }
+                ?>
+
                 <h2>Reviews</h2>
                 <form action="#" method="POST" id="addReview">
                     <fieldset>
