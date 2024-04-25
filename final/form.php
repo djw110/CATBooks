@@ -65,7 +65,6 @@
             $message .= '<p>Data Successfully Saved</p>';
         }
 
-
     }
 
 ?>
