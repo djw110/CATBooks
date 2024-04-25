@@ -32,7 +32,6 @@
                                 }
                                 ?>
                         
-                        
                     </section>
             </div>
         </main>
