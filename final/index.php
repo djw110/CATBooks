@@ -42,7 +42,8 @@
                         print '</article>';
                     }
                 ?>
-                
+
+    
                 </section>
                 <section>
                     <h2 class="centered">
