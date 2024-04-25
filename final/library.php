@@ -8,6 +8,7 @@
             </h2>
             <div class="mainsection">
                     <section class="libsection">
+                        <h2 class="hidden">Placeholder</h2>
                         <?php
                                 $sql = 'SELECT pmkBookID, fldTitle, fldLastName, fldYear, varRating FROM tblBooks';
                                 $statement = $pdo->prepare($sql);

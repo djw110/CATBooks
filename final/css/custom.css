@@ -291,3 +291,7 @@ input[type=checkbox],input[type=radio] {
                 1px -1px 0 #000,
                 -1px -1px 0 #000;
   }
+
+  .hidden {
+    display: none;
+  }

@@ -28,6 +28,7 @@
 
                     foreach($top5 as $topbook){
                         print '<article class ="review">';
+                        print '<h2 class="hidden">Placeholder</h2>';
                         print '<fieldset>';
                         print '<legend class="centered">' . $topbook['fldTitle'] . '</legend>';
                         print '<p>' . $topbook['fldFirstName'] . ' ' . $topbook['fldLastName'] . ' </p>';
@@ -58,6 +59,7 @@
 
                     foreach($recents as $recent){
                         print '<article class ="review">';
+                        print '<h2 class="hidden">Placeholder</h2>';
                         print '<fieldset>';
                         print '<legend class="centered">' . $recent['fldTitle'] . '</legend>';
                         print '<p>' . $recent['fldFirstName'] . ' ' . $recent['fldLastName'] . ' </p>';

@@ -162,6 +162,7 @@
 
                     foreach($displayreviews as $displayreview){
                         print '<article class ="review">';
+                        print '<h2 class="hidden">Placeholder</h2>';
                         print '<fieldset>';
                         print '<legend>' . $displayreview['fldEmail'] . ' <span class="score">'. $displayreview['fldScore'] . '</span></legend>';
                         print '<p>' . $displayreview['fldReview'] . ' </p>';
