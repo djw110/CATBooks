@@ -1,0 +1,293 @@
+:root {
+    --maintxtclr: rgb(255, 255, 255);
+    --mainbgclr: rgba(170, 120, 102, 0.650);
+    --mainfnt:'Arial, sans-serif';
+}
+
+body {
+    margin: auto;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    font-family: var(--mainfnt);
+    max-width: 120ch;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    margin-left:  20%;
+    margin-right: 20%;
+    background-color: var(--mainbgclr);
+    border-radius: 1.5em;
+}
+
+
+header > h1 {
+    text-transform: uppercase;
+    color:rgb(59, 105, 59);
+    text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+
+h1 > span {
+    color: yellow;
+}
+
+p{
+    background-color: var(--mainbgclr);
+    margin: 1em;
+    padding: 1.5em;
+}
+
+section>ul>li, section>ol>li{
+    padding: 1em;
+}
+
+.mainsection > * {
+    padding: 1.25em;
+    box-sizing: border-box;
+}
+
+section > ul > li:nth-child(even), section > ol > li:nth-child(even) {
+    background-color: rgba(117, 81, 70, 0.65);
+}
+
+section>ul>li:nth-child(1), section>ol>li:nth-child(1){
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+
+section>ul>li:last-child, section>ol>li:last-child{
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+}
+
+section > ul > li:nth-child(odd), section > ol > li:nth-child(odd) {
+    background-color: rgba(170, 120, 102, 0.650);
+}
+
+img {
+    text-align: center;
+    max-width: 100%;
+}
+
+p {
+    text-indent: 2em;
+    border-radius: 1.5em;
+    border: 0.2em solid rgba(28, 23, 31, 0.450);
+}
+nav a:link{
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a{
+    display: inline-block;
+    font-size: large;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--mainbgclr);
+    padding: 1% 0;
+    border-radius: 1.5em;
+    border: 0.2em solid rgba(28, 23, 31, 0.450);
+}
+
+cite {
+    font-size: xx-small;
+}
+
+nav a:hover, #bio a:hover {
+    color: rgb(59, 105, 59);
+}
+
+img {
+    max-width: 100%;
+}
+
+select:focus, input[type=email]:focus {
+    background-color: rgba(201, 229, 239, 0.386);  
+}
+
+input:invalid {
+    border: 0.015em solid rgba(165, 31, 31, 0.949);
+ }
+
+ input[type=submit]:hover {
+    background-color: rgba(105, 72, 62, 0.871);
+ }
+
+ input[type=submit] {
+    background-color: rgba(117, 81, 70, 0.871);
+    color: white;
+    border: none;
+    border-radius: 1.5em;
+    transform: scale(1.5);
+    margin-left: 4%;
+ }
+
+ #formsubmit {
+    margin-left: 35%;
+ }
+
+ textarea {
+    border-radius: 1em;
+ }
+
+ .libsection {
+    background-color: transparent;
+    border-radius: 1.5em;
+ }
+
+ input[type=email],select, input[type=text], input[type=number] {
+    box-sizing: border-box;
+    border-radius: 1.5em;
+    border: 0.01em solid rgba(118, 93, 55, 0.386); 
+ }
+
+ input[type=email],select,input[type=radio],input[type=checkbox],input[type=submit]{
+    cursor:pointer
+ }
+
+ fieldset{
+    border: none;
+    
+ }
+
+ legend{
+    text-align: left;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-left: 5%
+ }
+
+ fieldset p {
+    background-color: rgba(94, 78, 56, 0.368);
+    border-radius: 1.5em;
+    text-indent: 0;
+    padding: 1em;
+    border: none;
+ }
+
+input[type=checkbox],input[type=radio] {
+        transform: scale(1.5);
+}
+
+.activePage{
+    text-decoration: underline !important;
+    color: #000000;
+}
+
+#FormHeader{
+    display: none;
+}
+
+.mistake{
+    background-color: rgba(224, 68, 25, 0.368);
+}
+
+.centered{
+    text-align: center;
+}
+
+#bio > a{
+    text-decoration: none;
+}
+
+.booklink{
+    text-decoration: none;
+}
+
+.book{
+    background-color: rgba(170, 120, 102, 0.550);
+    border-radius: 1.5em;
+    border: 0.2em solid rgba(28, 23, 31, 0.450);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    color: black;
+}
+
+.book > p{
+    text-indent: 0;
+    border: none;
+    background-color: transparent;
+    margin: auto;
+}
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+    text-decoration: underline;
+    padding-bottom: 0.1em;
+    font-weight: normal;
+  }
+  
+  .date {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.15em;
+  }
+
+  .rating {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #da925a;
+    padding: 0.15em;
+    padding-bottom: 0.5em;
+    text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+  }
+  
+  .author {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.15em;
+  }
+  
+  .book:hover {
+    transform: translateY(-0.5em);
+  }
+
+  label {
+    display: block;
+    padding-bottom: 0.2em;
+  }
+
+  #booktitle {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  #addReview {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .review {
+    background-color: var(--mainbgclr);
+    border-radius: 1.5em;
+    margin-top: 1.5em;
+  }
+
+  .review legend {
+    padding-top: 2.5%;
+    }
+
+    .score {
+    color: #da925a;
+    font-weight: bold;
+    text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+  }
