@@ -118,8 +118,8 @@
             <h3>Public Files</h3>
             <p><a href="final/index.php">Home Page</a></p>
             <p><a href="final/library.php">Library</a></p>
-            <p><a href="final/detail.php">Book Detail page</a></p>
-            <p><a href="final/form.php">Form page</a></p>
+            <p><a href="final/form.php">First Form page</a></p>
+            <p><a href="final/detail.php">Book Detail & Second Form Page (Requires a valid query URL, sends an Email)</a></p>
         </section>
 
         <section class="supporting-files">

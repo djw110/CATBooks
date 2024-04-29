@@ -69,12 +69,12 @@
         Add New Book
         </h2>
         <div class = "mainsection">
-            <section id="formsection">
-                <?php
+            <?php
                     if($message != ''){
                         print $message;
                     }
-                ?>
+            ?>
+            <section id="formsection">
                 <h2 id="FormHeader">Complete This Form</h2>
                 <form action="#" method="POST">
                     
